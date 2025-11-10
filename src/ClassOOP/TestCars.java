@@ -17,7 +17,6 @@ public class TestCars {
 
         // Create new Cars objects
         Cars myCars = new Cars();
-
         Cars sistersCars = new Cars(100, "Ford", "My sister Mary",
                 "Red", 2008, 105, 10995.00);
 
