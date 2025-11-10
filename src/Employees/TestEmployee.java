@@ -1,4 +1,5 @@
 package Employees;
+
 import java.util.Scanner;
 
 public class TestEmployee {
@@ -9,10 +10,10 @@ public class TestEmployee {
         return keyboard.nextLine();
     }
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         String name, number;
-        double annualSalary, hourlyPay;
-        int empNoOfHoursWord;
+        double annualSalary, hourlyPay, monthlypay;
+        int empNoOfHoursWord, hoursPerMonth ;
 
         // Employee
 //        System.out.println("TEST EMPLOYEE");
@@ -37,27 +38,49 @@ public class TestEmployee {
 //        System.out.println("Month pay: " + employee2.getMonthlySalary());
 
         // CASUAL WORKERS
-        System.out.println("TEST CASUAL EMPLOYEE");
+//        System.out.println("TEST CASUAL EMPLOYEE");
+//        System.out.println("=======================");
+//        name = getText("Employee name: ");
+//        number = getText("Employee number: ");
+//        CasualEmployee employee3 = new CasualEmployee(name, number);
+//        System.out.println("What is " + employee3.getName() + "Hourly pay? ");
+//        hourlyPay = keyboard.nextDouble();
+//        employee3.setHourlyPay(hourlyPay);
+//        System.out.println("How many hours has " + employee3.getName() + "work this week");
+//        empNoOfHoursWord = keyboard.nextInt();
+//        System.out.println("Employee: " + employee3.getName() +  "with ID" + employee3.getNumber());
+//        System.out.println("Weekly pay: " + "$" + employee3.CalculateWeeklyPay(empNoOfHoursWord));
+
+        // PART TIME WORKERS
+        System.out.println("TEST PART TIME EMPLOYEE");
         System.out.println("=======================");
         name = getText("Employee name: ");
         number = getText("Employee number: ");
-        CasualEmployee employee3 = new CasualEmployee(name, number);
-        System.out.println("What is " + employee3.getName() + "Hourly pay? ");
+
+        PartTimeEmployee employee4 = new PartTimeEmployee(name, number);
+        System.out.println("What is " + employee4.getName() + "Hourly pay? ");
         hourlyPay = keyboard.nextDouble();
-        employee3.setHourlyPay(hourlyPay);
-        System.out.println("How many hours has " + employee3.getName() + "work this week");
-        empNoOfHoursWord = keyboard.nextInt();
-        System.out.println("Employee: " + employee3.getName() +  "with ID" + employee3.getNumber());
-        System.out.println("Weekly pay: " + "$" + employee3.CalculateWeeklyPay(empNoOfHoursWord));
+        System.out.println("How many hours has per month do " + employee4.getName() + "works");
+        hoursPerMonth = keyboard.nextInt();
+        // print out
+        System.out.println("Employee name: " + employee4.getName());
+        System.out.println("Employee ID: " + employee4.getNumber());
+        System.out.println("Monthly pay: " + employee4.getCalculateMonthlyPay(hourlyPay, hoursPerMonth));
+
+
+
+
+
+
+
     }
 }
 
 //
-//Test casual EMPLOYEE15
-//=======================16
-//Employee Number : J680217
-//Employee Name : Alison Gordon18
-//What is Alison Gordon's hourly pay? £8.5019
-//How many hours has Alison Gordon worked this week? 22
-//Employee: J680221
-//Weekly Pay: £0,187.0022
+//Add code to your TestEmployee.java to test this new subclass by creating another employee
+//        (employee4). You should prompt the user for Employee Number, Employee Name, Hourly
+//Pay and Hours worked per month. The program should output the Employee Number and
+//Monthly Pay eg
+//Employee: D4586
+//Monthly Pay: £1,360.00
+//Week 7 Lab Exercises – Classes & Objects (2)

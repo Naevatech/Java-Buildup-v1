@@ -6,6 +6,7 @@ public class Employee {
     private String number;
     private String name;
 
+
     public Employee(String empName, String empNumber){
         name = empName;
         number = empNumber;
