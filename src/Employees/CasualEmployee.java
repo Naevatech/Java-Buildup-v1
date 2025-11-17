@@ -16,4 +16,7 @@ public class CasualEmployee extends Employee {
     public double CalculateWeeklyPay(int empNoOfHours) {
         return empNoOfHours * hourlyPay;
     }
+    protected String getStatus() {
+        return ("Casual");
+    }//getStatus
 }

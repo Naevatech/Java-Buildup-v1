@@ -2,7 +2,7 @@ package Lab9;
 
 //public class GroupProject {
 
-// collect data from family, how many people? any toaster? any microwave oven? etc
+// collect data from family, how many people? any toaster? any microwave oven?
 // 5 family members
 
 // how much is electricity bill per month?

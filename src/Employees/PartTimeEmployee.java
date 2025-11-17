@@ -26,4 +26,7 @@ public class PartTimeEmployee extends Employee {
     public double getCalculateMonthlyPay(double hourlyPay, int hoursPerMonth) {
         return hourlyPay*hoursPerMonth;
     }
+    protected String getStatus() {
+        return ("Part-Time");
+    }//getStatus
 }

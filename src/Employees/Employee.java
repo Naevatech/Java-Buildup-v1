@@ -1,6 +1,6 @@
 package Employees;
 
-public class Employee {
+abstract public class Employee {
 
     // instance variable
     private String number;
@@ -21,5 +21,6 @@ public class Employee {
     public String getNumber() {
         return number;
     }
+    abstract protected String getStatus();
 
 }

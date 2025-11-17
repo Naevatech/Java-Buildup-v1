@@ -1,5 +1,7 @@
 package Employees;
 
+import OveridingMethod.FullTimeEmployee1;
+
 import java.util.Scanner;
 
 public class TestEmployee {
@@ -15,12 +17,18 @@ public class TestEmployee {
         double annualSalary, hourlyPay, monthlypay;
         int empNoOfHoursWord, hoursPerMonth ;
 
-        // Employee
-//        System.out.println("TEST EMPLOYEE");
-//        System.out.println("====================");
-//        name = getText("Employee name: ");
-//        number = getText("Employee number: ");
-//        Employee employee1 = new Employee(name, number);
+//        FullTimeEmployee employee1 = new FullTimeEmployee(name, number);
+
+//         Employee
+        System.out.println("TEST EMPLOYEE");
+        System.out.println("====================");
+        name = getText("Employee name: ");
+        number = getText("Employee number: ");
+        //Employee employee1 = new Employee(name, number);
+        //Employee employee1 = new Employee(name, number);
+        //Employee1 employee1 = new Employee1();//cannot create an object from abstract class Employee1
+        FullTimeEmployee employee2 = new FullTimeEmployee(name, number);//FullTimeEmployee1 implemented
+        //CasualEmployee employee3 = new CasualEmployee();//CasualEmployee1 implemented
 //        System.out.println("Employee with ID number " + employee1.getName() + " is " + employee1.getNumber());
 
         //Full time employee
@@ -66,7 +74,7 @@ public class TestEmployee {
         System.out.println("Employee name: " + employee4.getName());
         System.out.println("Employee ID: " + employee4.getNumber());
         System.out.println("Monthly pay: " + employee4.getCalculateMonthlyPay(hourlyPay, hoursPerMonth));
-
+        System.out.println(employee2.getStatus() + " Employee");
 
 
 

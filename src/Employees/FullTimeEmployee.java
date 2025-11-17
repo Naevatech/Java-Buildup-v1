@@ -17,6 +17,9 @@ public class FullTimeEmployee extends Employee {
     public double getMonthlySalary() {
         return annualSalary/12;
     }
+    protected String getStatus() {
+        return ("Full-Time");
+    }//getStatus
 
 
 }
