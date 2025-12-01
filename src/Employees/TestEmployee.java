@@ -26,7 +26,7 @@ public class TestEmployee {
         number = getText("Employee number: ");
         //Employee employee1 = new Employee(name, number);
         //Employee employee1 = new Employee(name, number);
-        //Employee1 employee1 = new Employee1();//cannot create an object from abstract class Employee1
+        //Employee employee1 = new Employee1();//cannot create an object from abstract class Employee1
         FullTimeEmployee employee2 = new FullTimeEmployee(name, number);//FullTimeEmployee1 implemented
         //CasualEmployee employee3 = new CasualEmployee();//CasualEmployee1 implemented
 //        System.out.println("Employee with ID number " + employee1.getName() + " is " + employee1.getNumber());
