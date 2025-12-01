@@ -30,5 +30,6 @@ public class Palindrome {
         else {
             System.out.println(sentence + " is not a palindrome");
         }//else
+//        this
     }
 }
